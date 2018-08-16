@@ -18,6 +18,7 @@
 		25BBF6D62125E345006379DB /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BBF6D52125E345006379DB /* Photo.m */; };
 		25BBF6DF2125EDDB006379DB /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BBF6DE2125EDDB006379DB /* Cat.m */; };
 		25BBF6E22125F0E2006379DB /* CatCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BBF6E12125F0E2006379DB /* CatCollectionViewCell.m */; };
+		25BBF72621262AD0006379DB /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BBF72521262AD0006379DB /* CollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		25BBF6DE2125EDDB006379DB /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		25BBF6E02125F0E2006379DB /* CatCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatCollectionViewCell.h; sourceTree = "<group>"; };
 		25BBF6E12125F0E2006379DB /* CatCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatCollectionViewCell.m; sourceTree = "<group>"; };
+		25BBF72421262AD0006379DB /* CollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
+		25BBF72521262AD0006379DB /* CollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 			children = (
 				25BBF6E02125F0E2006379DB /* CatCollectionViewCell.h */,
 				25BBF6E12125F0E2006379DB /* CatCollectionViewCell.m */,
+				25BBF72421262AD0006379DB /* CollectionReusableView.h */,
+				25BBF72521262AD0006379DB /* CollectionReusableView.m */,
 				25BBF6A82125E2FC006379DB /* Main.storyboard */,
 				25BBF6AD2125E2FD006379DB /* LaunchScreen.storyboard */,
 			);
@@ -307,6 +312,7 @@
 				25BBF6A42125E2FC006379DB /* AppDelegate.m in Sources */,
 				25BBF6DF2125EDDB006379DB /* Cat.m in Sources */,
 				25BBF6E22125F0E2006379DB /* CatCollectionViewCell.m in Sources */,
+				25BBF72621262AD0006379DB /* CollectionReusableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

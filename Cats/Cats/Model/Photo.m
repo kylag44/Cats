@@ -10,6 +10,11 @@
 
 @implementation Photo
 
+
+
+
+
+
 + (void)getPhotos:(void (^)(NSMutableArray *))completion {
     //get url from browser
     NSURL *url = [NSURL URLWithString:@"https:api.imgur.com/3/gallery/search?q=cats"];
@@ -63,6 +68,8 @@
     [task resume];
     NSLog(@"Resumed task");    
 }
+
+
 
 
 

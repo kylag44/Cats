@@ -38,6 +38,14 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FVx-8b-MaX">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vex-rM-BHX">
+                                                    <rect key="frame" x="0.0" y="115" width="150" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.49706778019999998" green="0.88235294119999996" blue="0.84265939749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="0.81474455000070445" blue="0.63407961343100072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -48,6 +56,10 @@
                                             <constraint firstItem="FVx-8b-MaX" firstAttribute="leading" secondItem="mbh-0C-6Ka" secondAttribute="leading" id="rse-CH-6te"/>
                                         </constraints>
                                         <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="FVx-8b-MaX" id="vbG-Pz-QP8"/>
+                                            <outlet property="label" destination="vex-rM-BHX" id="45b-N7-aUW"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="82P-ph-7am">
@@ -64,7 +76,7 @@
                                     <color key="backgroundColor" red="0.49706778019999998" green="0.88235294119999996" blue="0.84265939749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="Iap-6T-QNk" firstAttribute="centerX" secondItem="82P-ph-7am" secondAttribute="centerX" id="Sxt-ad-ca7"/>
-                                        <constraint firstItem="Iap-6T-QNk" firstAttribute="centerY" secondItem="82P-ph-7am" secondAttribute="centerY" id="py9-cP-RfF"/>
+                                        <constraint firstItem="Iap-6T-QNk" firstAttribute="centerY" secondItem="82P-ph-7am" secondAttribute="centerY" id="py9-cP-RfF" customClass="CatCollectionView"/>
                                     </constraints>
                                 </collectionReusableView>
                                 <connections>

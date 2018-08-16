@@ -7,12 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@import UIKit;
+#import "Photo.h"
 @interface Cat : NSObject
 
 
 @property (nonatomic,strong) NSString *link;
 @property (nonatomic, strong) NSString *name; 
+@property (nonatomic) NSURL *urlCat;
+@property (nonatomic) NSString *nameCat;
+@property (nonatomic) UIImage *imageCat;
+@property (nonatomic) NSString *dataCat;
+
 
 - (instancetype)initWithInfo:(NSDictionary *)info;
 

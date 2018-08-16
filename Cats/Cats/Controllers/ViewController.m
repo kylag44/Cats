@@ -8,14 +8,13 @@
 
 #import "ViewController.h"
 #import "Photo.h"
-
-
+#import "CatCollectionViewCell.h"
 
 
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 
 @property (nonatomic) NSArray<Cat *> *objects;
 
@@ -38,29 +37,31 @@
 }
 
 ////////layout stuff
-//-(void)viewWillLayoutSubviews {
-//    /////////make an instance of layout
-//    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
-//    /////have the layout pin the header
-//    layout.sectionHeadersPinToVisibleBounds = YES;
-//    CGSize size = CGSizeMake(self.collectionView.bounds.size.width/3, self.collectionView.bounds.size.width/3);
-//    layout.itemSize = size;
-//}
+-(void)viewWillLayoutSubviews {
+    /////////make an instance of layout
+    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
+    /////have the layout pin the header
+    layout.sectionHeadersPinToVisibleBounds = YES;
+    CGSize size = CGSizeMake(self.collectionView.bounds.size.width/3, self.collectionView.bounds.size.width/3);
+    layout.itemSize = size;
+}
 
 /////delegats
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.objects.count;
 }
-
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return self.objects.count;
-
-}
+////this is just for different sections
+//-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+//    return self.objects.count;
+//}
 
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
- 
+   CatCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+
+    cell.cat = self.objects[indexPath.row];
+    
+    
     return cell;
 }
 

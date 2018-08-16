@@ -8,14 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@class Photo;
+
 @class Cat;
 
 @interface CatCollectionViewCell : UICollectionViewCell
 
-@property (nonatomic)Photo *photo;
 
 
+
+
+@property (nonatomic)Cat *cat;
+
+
+
+-(void)setCat:(Cat *)cat;
 @end
 
 

@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "Cat.h"
+@import UIKit;
 
 @interface Photo : NSObject
 
+@property (nonatomic) NSURL *urlPhoto;
+@property (nonatomic) NSString *namePhoto;
+@property (nonatomic) UIImage *image; 
 
 
 
